@@ -8,7 +8,7 @@ const Section = styled.div({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "space-between",
-  padding: "0 10px",
+  padding: '0 50px',
 });
 
 const Container = styled.div({
