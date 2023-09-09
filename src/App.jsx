@@ -24,6 +24,7 @@ function App() {
       <Who />
       <Works />
       <Contacts />
+      {/* <Test /> */}
     </Container>
   );
 }
