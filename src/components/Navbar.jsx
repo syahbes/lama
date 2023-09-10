@@ -3,6 +3,9 @@ import styled from "styled-components";
 const Section = styled.div({
   display: "flex",
   justifyContent: "center",
+  '@media (max-width: 768px)': {
+    width: "100vw",
+  },
 });
 
 const Container = styled.div({
@@ -12,12 +15,17 @@ const Container = styled.div({
   justifyContent: "space-between",
   alignItems: "center",
   padding: "10px 0px",
+  '@media (max-width: 768px)': {
+    width: "100vw",
+    padding: "0px 10px",
+  },
 });
 
 const Links = styled.div({
   display: "flex",
   alignItems: "center",
   gap: "50px",
+  
 });
 
 const Logo = styled.img({
@@ -29,6 +37,10 @@ const List = styled.ul({
   alignItems: "center",
   gap: "20px",
   listStyle: "none",
+  '@media (max-width: 768px)': {
+    // flexDirection: "column",
+    display: "none",
+  },
 })
 
 const ListItem = styled.li({

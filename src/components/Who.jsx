@@ -22,6 +22,9 @@ const Container = styled.div({
 });
 const Left = styled.div({
   flex: 1,
+  '@media (max-width: 768px)': {
+    display: "none",
+  }
 });
 const Right = styled.div({
   flex: 1,
@@ -30,24 +33,44 @@ const Right = styled.div({
   alignItems: "flex-start",
   justifyContent: "center",
   gap: "20px",
+  '@media (max-width: 768px)': {
+    alignItems: "center",
+    textAlign: "center",
+  }
 });
 const Title = styled.h1({
   fontSize: "74px",
+  '@media (max-width: 768px)': {
+    fontSize: "60px",
+    textAlign: "left",
+  }
 });
 const WhatWeDo = styled.div({
   display: "flex",
   alignItems: "center",
-  gap: "10px",
+  '@media (max-width: 768px)': {
+  width: "100%",
+  textAlign: "left",
+  alignItems: "center",
+  gap: "20px",
+  }
 });
 const Line = styled.img({
   height: "5px",
 });
 const Subtitle = styled.h2({
   color: "#da4ea2",
+  '@media (max-width: 768px)': {
+    fontSize: "24px",
+   
+  }
 });
 const Desc = styled.p({
   fontSize: "24px",
   color: "lightgray",
+  '@media (max-width: 768px)': {
+    fontSize: "22px",
+  }
 });
 const Button = styled.button({
   backgroundColor: "#da4ea2",
@@ -58,6 +81,11 @@ const Button = styled.button({
   border: "none",
   borderRadius: "5px",
   cursor: "pointer",
+  '@media (max-width: 768px)': {
+    fontSize: "20px",
+    width: "80%",
+    marginTop: "20px",
+  }
 });
 
 const Who = () => {

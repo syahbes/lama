@@ -22,6 +22,9 @@ const Left = styled.div({
   display: "flex",
   alignItems: "center",
   justifyContent: "flex-end",
+  '@media (max-width: 768px)': {
+  justifyContent: "center",
+  }
 });
 
 const Form = styled.form({
@@ -29,6 +32,9 @@ const Form = styled.form({
   display: "flex",
   flexDirection: "column",
   gap: "25px",
+  '@media (max-width: 768px)': {
+    width: "300px",
+  }
 
 });
 
@@ -66,6 +72,9 @@ const Button = styled.button({
 
 const Right = styled.div({
   flex: "1",
+  '@media (max-width: 768px)': {
+    display: "none",
+  }
 });
 
 

@@ -12,15 +12,26 @@ const Section = styled.div({
   alignItems: "center",
   justifyContent: "space-between",
   padding: '0 50px',
+  '@media (max-width: 768px)': {
+    height: '200vh',
+    justifyContent: 'flex-start',
+  }
 });
 
 const Container = styled.div({
-  height: "100vh",
+  // height: "100vh",
   scrollSnapAlign: "center",
   maxWidth: "1400px",
   width: "100%",
   display: "flex",
   justifyContent: "space-between",
+  '@media (max-width: 768px)': {
+    flexDirection: "column",
+    alignContent: "center",
+    alignItems: "center",
+    width: '100%',
+    height: '100%',
+  }
 });
 const Left = styled.div({
   flex: 2,
@@ -29,12 +40,19 @@ const Left = styled.div({
   alignItems: "flex-start",
   justifyContent: "center",
   gap: "20px",
+  '@media (max-width: 768px)': {
+    flex: 1,
+    alignItems: "center",
+  }
 });
 const Title = styled.h1({
   fontSize: "74px",
+  '@media (max-width: 768px)': {
+  textAlign: "center",
+  }
 });
 const WhatWeDo = styled.div({
-  display: "flex",
+  display: "f4lex",
   alignItems: "center",
   gap: "10px",
 });
@@ -43,6 +61,7 @@ const Line = styled.img({
 });
 const Subtitle = styled.h2({
   color: "#da4ea2",
+
 });
 const Desc = styled.p({
   fontSize: "24px",
@@ -62,6 +81,11 @@ const Button = styled.button({
 const Right = styled.div({
   flex: 3,
   position: "relative",
+  '@media (max-width: 768px)': {
+    flex: 1,
+    width: '100vw',
+    padding: '0',
+  }
 });
 
 const Img = styled.img({
@@ -74,6 +98,10 @@ const Img = styled.img({
   left: 0,
   right: 0,
   margin: "auto",
+  '@media (max-width: 768px)': {
+    width: "350px",
+    // height: "300px",
+  },
   animation: "animate 2s infinite ease alternate",
   "@keyframes animate": {
     "100%": {
